@@ -12,12 +12,15 @@
     <artifactId>stocktracker</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
+    <name>stocktracker</name>
+    <description>Spring Boot and Angular application</description>
+
+
+
     <modules>
         <module>frontend</module>
         <module>backend</module>
     </modules>
 
-    <name>stocktracker</name>
-    <description>Spring Boot and Angular application</description>
 
 </project>
