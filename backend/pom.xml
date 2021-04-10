@@ -47,7 +47,7 @@
         </dependency>
 
         <dependency>
-        <groupId>com.shekhargulati</groupId>
+        <groupId>com.mquraishi</groupId>
         <artifactId>frontend</artifactId>
         <version>${project.parent.version}</version>
       </dependency>
