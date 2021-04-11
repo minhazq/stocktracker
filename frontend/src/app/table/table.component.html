@@ -1,0 +1,37 @@
+<div style="text-align: center">
+<table class="table table-bordered">
+  <thead class="thead-light">
+  <tr>
+    <!--<th *ngFor="let col of tableModel">{{ col.netBalance }}</th>-->
+    <th scope="col">Id</th>
+    <th scope="col">ticker</th>
+    <th scope="col">companyDetails</th>
+    <th scope="col">entryDate</th>
+    <th scope="col">entryPrice</th>
+    <th scope="col">exitDate</th>
+    <th scope="col">exitPrice</th>
+    <th scope="col">profitPerShare</th>
+    <th scope="col">netBalance</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let data of tableModel; let i = index">
+    <td>{{i}}</td>
+    <td>{{data.ticker}}</td>
+    <td>{{data.companyDetails}}</td>
+    <td>{{data.entryDate}}</td>
+    <td>{{data.entryPrice}}</td>
+    <td>{{data.exitDate}}</td>
+    <td>{{data.exitPrice}}</td>
+    <td>{{data.profitPerShare}}</td>
+    <td>{{data.netBalance}}</td>
+    <!-- THE FLLOWING IS EXAMPLE
+    <td>
+      <ul>
+        <li *ngFor="let  f of a.filmography">{{f.name}}-({{f.year}})</li>
+      </ul>
+    </td>-->
+  </tr>
+  </tbody>
+</table>
+</div>
