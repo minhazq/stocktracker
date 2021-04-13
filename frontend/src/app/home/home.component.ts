@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {HomeModelInterface} from "./homeModelInterface";
+import {HomeApiService} from "../services/home.api.service";
+import {Observable} from "rxjs";
 
 @Component({
   selector: 'app-home',
@@ -7,9 +10,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  public profileData: HomeModelInterface[] =[];
 
-  ngOnInit(): void {
+  constructor(private homeApiService:HomeApiService) { }
+
+  ngOnInit() {
+    this.getProfileData();
+  }
+
+  getProfileData(){
+    this.homeApiService.getProfileData().subscribe(data=> {
+      this.profileData = data;});
   }
 
 }

@@ -1,1 +1,24 @@
-<p>home works!</p>
+<div *ngFor="let profile of profileData">
+  <button (click)="getProfileData()">Reload profile Data</button>
+  <ul>
+    <li>{{profile.data}}</li>
+    <li>{{profile.errors}}</li>
+  </ul>
+</div>
+
+
+<div>After clicking refresh profile , the following info will display
+  <ul>
+
+    <li>total balance ( positive or negative)</li>
+    <li> Highest porofit on stock with ticker</li>
+    <li> biggest lost on stock with ticker</li>
+    <li> the most recent profitiable stock</li>
+    <li> the most recent loss stock</li>
+    <li> total number of copany is invested</li>
+    <li> etc ..</li>
+
+  </ul>
+</div>
+
+
