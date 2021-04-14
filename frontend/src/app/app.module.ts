@@ -7,7 +7,6 @@ import {TableComponent} from "./table/table.component";
 import { HomeComponent } from './home/home.component';
 import { LinkComponent } from './link/link.component';
 import {HttpClientModule} from "@angular/common/http";
-import {HashLocationStrategy, LocationStrategy} from "@angular/common";
 import {RouterModule, Routes} from "@angular/router";
 
 const routes: Routes = [];
@@ -26,7 +25,7 @@ const routes: Routes = [];
     HttpClientModule,
     RouterModule.forRoot(routes, { useHash: true })
   ],
-  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
