@@ -23,6 +23,7 @@ const routes: Routes = [];
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    /*the following code is required for refreshing defect.*/
     RouterModule.forRoot(routes, { useHash: true })
   ],
   providers: [],

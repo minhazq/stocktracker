@@ -3,7 +3,6 @@ package com.ny.fun.stocktracker.persistance;
 import javax.persistence.*;
 
 @Entity
-//@Table()
 public class User_Info {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
