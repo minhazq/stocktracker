@@ -8,6 +8,9 @@ import { HomeComponent } from './home/home.component';
 import { LinkComponent } from './link/link.component';
 import {HttpClientModule} from "@angular/common/http";
 import {HashLocationStrategy, LocationStrategy} from "@angular/common";
+import {RouterModule, Routes} from "@angular/router";
+
+const routes: Routes = [];
 
 @NgModule({
   declarations: [
@@ -20,7 +23,8 @@ import {HashLocationStrategy, LocationStrategy} from "@angular/common";
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot(routes, { useHash: true })
   ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
