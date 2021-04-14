@@ -9,7 +9,7 @@ import {Observable} from "rxjs";
 
 export class HomeApiService{
 
-  apiURL = 'http://localhost:8080/api';
+  apiURL = 'https://stocktracker2021.herokuapp.com/api';
 
   constructor(private http: HttpClient) {
   }
